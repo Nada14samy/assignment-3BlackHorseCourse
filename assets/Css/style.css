@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 99vh;
+  background-color: rgba(128, 128, 128, 0.253);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 5px solid rgb(119, 19, 19);
+  position: relative;
+}
+header .span1 {
+  background-color: rgb(54, 53, 53);
+  color: #fff;
+  padding: 25px;
+  padding-right: 5px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  position: absolute;
+  left: 91px;
+  top: 86px;
+  z-index: 111;
+}
+header .span2 {
+  position: absolute;
+  left: 175px;
+  top: 87px;
+  width: 0px;
+  height: 0px;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 70px solid rgb(54, 53, 53);
+}
+header .card1 {
+  display: inline-block;
+  margin-inline: 5px;
+  background-color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+header .card1 .image {
+  overflow: hidden;
+}
+header .card1 .image img {
+  transition: all 0.5s ease;
+}
+header .card1 .image img:hover {
+  transform: scale(1.4);
+}
+header .card1 .text {
+  padding: 15px 20px;
+  transition: 1s ease;
+}
+header .card1 .text .title {
+  padding: 5px;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+header .card1 .text .text-title {
+  padding: 5px;
+  opacity: 60%;
+}
+header .card1 .text:hover {
+  transform: translate(15px, 0px);
+}
+
+@media only screen and (max-width: 1200px) {
+  header {
+    height: 150vh;
+    padding: 20px 0px;
+  }
+  header .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 30px;
+  }
+  header .card .card1 {
+    margin-top: 18px;
+  }
+  header .card .card1 img {
+    width: 100%;
+  }
+  header .span1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  header .span2 {
+    position: absolute;
+    left: 83px;
+    top: 0px;
+    border-left: 36px solid transparent;
+    border-right: 36px solid transparent;
+    border-bottom: 71px solid rgb(54, 53, 53);
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 860px) {
+  header {
+    height: auto;
+  }
+  header .card {
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header {
+    height: auto;
+    padding: 20px 0px;
+  }
+  header .span1,
+  header .span2 {
+    margin-bottom: 20px;
+  }
+  header .card {
+    margin-top: 15px;
+  }
+  header .card img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  header .span1 {
+    font-size: 14px;
+  }
+  header .span2 {
+    left: 66px;
+    border-left: 33px solid transparent;
+    border-right: 33px solid transparent;
+    border-bottom: 66px solid rgb(54, 53, 53);
+  }
+  header .card .card1 img {
+    width: 100%;
+  }
+  header .card .card1 .title {
+    font-size: 1rem;
+  }
+  header .card .card1 .text-title {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=style.css.map */
