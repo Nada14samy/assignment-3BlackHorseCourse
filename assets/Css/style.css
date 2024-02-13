@@ -113,6 +113,12 @@ header .card1 .text:hover {
   header .card {
     margin-top: 15px;
   }
+  header .span1 {
+    padding: 25px;
+  }
+  header .span2 {
+    display: none;
+  }
 }
 @media only screen and (max-width: 767px) {
   header {
